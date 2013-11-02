@@ -7,7 +7,7 @@ way to interact with the [GitHub API](http://developer.github.com/v3/).
 
 Get public info on a specific user.
 
-```
+```c#
 var github = new GitHubClient(new ProductHeaderValue("MyAmazingApp"));
 var user = await github.User.Get("half-ogre");
 Console.WriteLine(user.Followers + " folks love the half ogre!");
@@ -34,9 +34,8 @@ Octokit is a single assembly designed to be easy to deploy anywhere. If you pref
 to compile it yourself, you’ll need:
 
 * Visual Studio 2012 or later, or Xamarin Studio
-* PowerShell 2.0 or greater. _For our build scripts_.
 * Windows 8 or higher to build and test the WinRT projects
- 
+
 To clone it locally click the "Clone in Windows" button above or run the 
 following git commands.
 
